@@ -23,9 +23,9 @@ namespace LabAssignment2
             Console.WriteLine("\n--- Experiment 1: User Profile ---");
 
             UserProfile user1 = new UserProfile();
-            user1.SetUsername("Jai Sony");
+            user1.SetUsername("Rishi");
             user1.SetPassword("secret123");
-            user1.SetEmail("jai@example.com");
+            user1.SetEmail("Rishi@example.com");
 
             UserProfile user2 = new UserProfile();
             user2.SetUsername("Deepak Katara");
@@ -77,7 +77,7 @@ namespace LabAssignment2
             Console.WriteLine("\n--- Experiment 5: Student Constructors ---");
 
             Student s1 = new Student();
-            Student s2 = new Student("Vijay", 101);
+            Student s2 = new Student("Shishank", 101);
             Student s3 = new Student("Pavan", 102, 95);
 
             s1.Display();
@@ -103,13 +103,13 @@ namespace LabAssignment2
             Console.WriteLine("\n--- Experiment 7: Library Management ---");
 
             Library library = new Library();
-            library.RegisterMember(new Member("Vijay"));
+            library.RegisterMember(new Member("Shishank"));
             library.RegisterMember(new Member("Pavan"));
 
             library.AddBook(new Book("C# Basics"));
             library.AddBook(new Book("Java Advanced"));
 
-            library.LendBook("C# Basics", "Vijay");
+            library.LendBook("C# Basics", "Shishank");
             library.LendBook("Java Advanced", "Pavan");
             library.DisplayAvailableBooks();
         }
